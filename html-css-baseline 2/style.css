@@ -1,0 +1,130 @@
+/*
+This is a CSS Rule
+It's made of two parts:
+ - a selector
+ - a set of declarations (that live between the curly braces)
+
+.selector {
+    font-size: 12px; // declarations are made up of a property-name and its value
+    font-family: Helvetica, Arial, sans-serif; // each declaration must be separated by a semi-colon
+}
+*/
+
+* {
+    box-sizing: border-box;
+}
+
+html {
+    background-color: #F1F1F1;
+    color: #666666;
+    border-color: #AAAAAA;
+    font-family: Lucida Grande, sans-serif;
+    font-size: 16px;
+}
+
+a {
+    color: #08C;
+}
+
+#content {
+    margin: 0 auto;
+    width: 980px;
+    background: white;
+    border: 1px solid #AAAAAA;
+}
+
+#content > div:nth-child(1) {
+    border-bottom: 1px solid #AAAAAA;;
+}
+
+#content > div:nth-child(2) {
+    border-bottom: 1px solid #AAAAAA;;
+}
+
+#banner {
+    background: url(images/hero.png) no-repeat;
+    height: 677px;
+    text-align: right;
+    padding-top: 62px;
+    padding-right: 80px;
+}
+
+#banner h1 {
+    font-size: 72px;
+    font-weight: bold;
+    margin: 0px;
+}
+#banner h2 {
+    font-size: 24px;
+    font-weight: normal;
+    margin: 0px;
+}
+
+#why-love {
+    display: flex;
+    flex-direction: row;
+    padding: 20px;
+}
+
+#why-love div{
+    order: 2;
+    margin: 20px;
+}
+
+#why-love img {
+    order: 1;
+}
+
+#retina {
+    display: flex;
+    flex-direction: row;
+    padding-bottom: 20px;
+    border-bottom: 1px solid rgba(0,0,0,0.1);
+    margin: 30px;
+}
+
+#retina div {
+    order: 1;
+}
+
+#retina img {
+    order: 2;
+}
+
+.actions {
+    display: flex;
+    list-style: none;
+    margin-bottom: 40px;
+}
+
+.actions > li {
+    text-align: center;
+}
+
+.actions li:nth-child(2) {
+    border-left: 2px solid rgba(0,0,0,0.1);
+    border-right: 2px solid rgba(0,0,0,0.1);
+}
+
+table{
+    border-collapse: collapse;
+    border: 1px solid #AAAAAA;
+    margin-bottom: 40px;
+}
+table td{
+    border: 1px solid #AAAAAA;
+}
+#specs thead{
+    text-align: center;
+}
+
+table th{
+    border: 1px solid #AAAAAA;
+    text-align: left;
+    padding-left: 10px;
+}
+
+#specs {
+    margin-left: 20px;
+    margin-right: 20px;
+}
